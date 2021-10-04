@@ -1,0 +1,22 @@
+\documentclass{article}
+
+\usepackage{hyperref}
+
+$if(title)$
+\newcommand{\coverpage}{
+    \begin{titlepage}
+        \LARGE{$title$}
+    \end{titlepage}
+}
+$endif$
+
+\begin{document}
+    $if(title)$
+    
+    \coverpage
+    
+    $endif$
+
+
+    $body$
+\end{document}
